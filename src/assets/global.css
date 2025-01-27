@@ -1,0 +1,11 @@
+:root {
+    --vermelho: #C31718;
+}
+
+.sem-marcadores {
+    list-style-type: none;
+}
+
+.sem-sublinhado {
+    text-decoration: none;
+}
