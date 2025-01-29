@@ -1,5 +1,6 @@
 :root {
-    --vermelho: #C31718;
+    --vermelho: #BB133E;
+    --azul: #002664;
 }
 
 .sem-marcadores {
@@ -8,4 +9,21 @@
 
 .sem-sublinhado {
     text-decoration: none;
+}
+
+.titulo {
+    color: var(--azul);
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.titulo::after {
+    content: "";
+    display: block;
+    margin: 10px;
+    width: 120px;
+    height: 3px;
+    background-color: var(--vermelho);
+    margin-left: auto;
+    margin-right: auto;
 }

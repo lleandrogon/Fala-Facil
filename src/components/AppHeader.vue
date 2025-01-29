@@ -51,7 +51,7 @@ export default {
 
 <style scoped>
     .custom-container {
-        width: 100vw;
+        width: 100%;
         padding-left: 0;
         padding-right: 0;
         overflow-x: hidden;
