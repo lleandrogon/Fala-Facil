@@ -1,6 +1,8 @@
 :root {
     --vermelho: #BB133E;
-    --azul: #002664;
+    --azul: #2682C2;
+    --azul-escuro: #002664;
+    --azul-claro: #ccdce7;
 }
 
 .sem-marcadores {
@@ -12,7 +14,7 @@
 }
 
 .titulo {
-    color: var(--azul);
+    color: var(--azul-escuro);
     font-size: 2.5em;
     text-transform: uppercase;
 }
@@ -26,4 +28,50 @@
     background-color: var(--vermelho);
     margin-left: auto;
     margin-right: auto;
+}
+
+.titulo-2 {
+    color: var(--azul-claro);
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.titulo-2::after {
+    content: "";
+    display: block;
+    margin: 10px;
+    width: 120px;
+    height: 3px;
+    background-color: var(--azul);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
+.form-control {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+  
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.8);
+}
+
+.botao {
+    padding: 7px 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: transform 0.5s ease;
+}
+
+.botao:hover {
+    background-color: var(--azul-claro);
+    transform: scale(1.05);
 }

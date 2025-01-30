@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid custom-container">
         <div class="inicio"></div>
-        <nav class="row py-2">
+        <nav class="row">
             <div class="col-6 d-flex align-items-center">
                 <img :src="logo" alt="Logo" class="logo img-fluid ms-3">
             </div>
@@ -64,7 +64,7 @@ export default {
     }
 
     .logo {
-        width: 100px;
+        width: 120px;
     }
 
     .menu-burger {
