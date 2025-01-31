@@ -2,7 +2,7 @@
   <section class="matricula container-fluid py-5">
     <h1 class="titulo-2 text-center">Matricule-se</h1>
     <div class="row">
-      <div class="col-12 col-md-7">
+      <div class="col-12 col-lg-7">
         <form action="" class="row px-2">
           <div class="mb-3 col-lg-6">
             <label for="nome" class="form-label">Nome Completo</label>
@@ -88,7 +88,7 @@
           </div>
         </form>
       </div>
-      <div class="imagem col-12 col-md-5 d-none d-md-block"></div>
+      <div class="imagem col-12 col-lg-5 d-none d-lg-block"></div>
     </div>
   </section>
 </template>
