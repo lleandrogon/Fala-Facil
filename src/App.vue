@@ -5,6 +5,8 @@
     <AppMatricula />
     <AppParceria />
     <AppAcademico />
+    <AppPerguntas />
+    <AppFooter />
 </template>
 
 <script>
@@ -14,6 +16,8 @@ import AppCursos from './components/AppCursos.vue';
 import AppMatricula from './components/AppMatricula.vue';
 import AppParceria from './components/AppParceria.vue';
 import AppAcademico from './components/AppAcademico.vue';
+import AppPerguntas from './components/AppPerguntas.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
   components: {
@@ -22,7 +26,9 @@ export default {
     AppCursos,
     AppMatricula,
     AppParceria,
-    AppAcademico
+    AppAcademico,
+    AppPerguntas,
+    AppFooter
   }
 }
 </script>
