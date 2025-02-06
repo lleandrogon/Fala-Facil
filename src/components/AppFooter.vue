@@ -8,13 +8,13 @@
         </div>
             <div class="row mt-5">
                 <div class="contatos col-12 col-md-6 d-flex flex-column align-items-center">
-                    <h2 class="subtitulo">Contatos</h2>
+                    <h3 class="subtitulo">Contatos</h3>
                     <div v-for="contato in contatos" :key="contato.id" class="mt-2">
                         <p class="contato my-3"><i :class="contato.icon" class="contato-icon me-3"></i>{{ contato.descricao }}</p>
                     </div>
                 </div>
                 <div class="redes-sociais col-12 col-md-6 d-flex flex-column align-items-center mt-4 mt-md-0">
-                    <h2 class="subtitulo">Redes Sociais</h2>
+                    <h3 class="subtitulo">Redes Sociais</h3>
                     <div v-for="redeSocial in redesSociais" :key="redeSocial.id" class="mt-2">
                         <a :href="redeSocial.link" target="_blank"><p class="rede-social my-3"><i :class="redeSocial.icon" class="rede-social-icon me-3"></i>{{ redeSocial.descricao }}</p></a>
                     </div>
@@ -122,8 +122,9 @@ export default {
 
 .subtitulo {
     color: var(--azul-claro);
-    font-size: 2.5em;
+    font-size: 2.3em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .contato, .rede-social {
@@ -160,7 +161,7 @@ a:hover {
     font-size: 1.1em;
     font-weight: 500;
     letter-spacing: 1px;
-    padding-top: 15px;
+    padding: 7px 0;
 }
 
 .leandro {

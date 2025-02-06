@@ -13,7 +13,7 @@
                 <div class="beneficios-container row mt-4 mx-2">
                     <div v-for="beneficio in beneficios" :key="beneficio.id" class="beneficios col-lg-6">
                         <i :class="beneficio.icon" class="me-2"></i>
-                        <span class="ms-4">{{ beneficio.descricao }}</span>
+                        <span class="ms-1 ms-md-4">{{ beneficio.descricao }}</span>
                     </div>
                 </div>
             </div>

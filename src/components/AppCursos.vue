@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid cursos py-5">
     <h1 class="titulo text-center">Nossos Cursos</h1>
-    <div class="row justify-content-center mt-5 mx-5">
+    <div class="row justify-content-center mt-5 mx-3 mx-md-5">
       <div
         v-for="curso in cursos"
         :key="curso.id"
