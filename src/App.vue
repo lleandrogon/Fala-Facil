@@ -1,12 +1,12 @@
 <template>
-    <AppHeader />
-    <AppHome />
-    <AppCursos />
-    <AppMatricula />
-    <AppParceria />
-    <AppAcademico />
-    <AppPerguntas />
-    <AppFooter />
+    <AppHeader id="header" />
+    <AppHome id="home" />
+    <AppCursos id="cursos" />
+    <AppMatricula id="matricula" />
+    <AppParceria id="parceria" />
+    <AppAcademico id="academico" />
+    <AppPerguntas id="perguntas" />
+    <AppFooter id="footer" />
 </template>
 
 <script>

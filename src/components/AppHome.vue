@@ -9,10 +9,10 @@ export default {
     data() {
         return {
         backgrounds: [
-            'url("https://wallpapers.com/images/hd/english-2000-x-1333-wallpaper-di44s6r4zq9mj991.jpg")',
-            'url("https://www.nexteducacion.com/wp-content/uploads/2024/01/Imagen-Blog-Next-30-1024x535.png")',
             'url("https://circuitomt.com.br/wp-content/uploads/2024/07/unnamed-34-1254x700.jpg")',
-            'url("https://cdn.elearningindustry.com/wp-content/uploads/2016/04/3-functional-lms-wordpress-themes-to-take-your-language-school-to-the-next-level.jpg")',
+            'url("https://culturainglesacuritiba.com.br/wp-content/uploads/2022/02/iStock-1305349522.jpg")',
+            'url("https://blog.portalpos.com.br/wp-content/uploads/2022/07/como-ser-professor-de-ingles.jpg")',
+            'url("https://www.britishcouncil.org/sites/default/files/european_day_of_languages_1.png")',
         ],
 
         backgroundIndex: 0,
@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .home {
-  height: 700px;
+  height: 750px;
   background-size: cover;
   background-position: center;
   background-position: center;

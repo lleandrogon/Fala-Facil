@@ -10,20 +10,20 @@
             </div>
             <div v-if="navResponsivo" class="text-center d-md-none">
                 <ul class="lista-responsiva">
-                    <li class="sem-marcadores"><a href="" class="sem-sublinhado">Cursos</a></li>
-                    <li class="sem-marcadores"><a href="" class="sem-sublinhado">Cursos</a></li>
-                    <li class="sem-marcadores"><a href="" class="sem-sublinhado">Cursos</a></li>
-                    <li class="sem-marcadores"><a href="" class="sem-sublinhado">Cursos</a></li>
-                    <li class="sem-marcadores"><a href="" class="sem-sublinhado">Cursos</a></li>
+                    <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('cursos')">Cursos</a></li>
+                    <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('matricula')">Matricula</a></li>
+                    <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('parceria')">Parceria</a></li>
+                    <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('academico')">Acadêmico</a></li>
+                    <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('perguntas')">Perguntas</a></li>
                 </ul>
             </div>
             <div class="col-6 d-none d-md-flex justify-content-end align-items-center mt-4">
                 <ul class="lista d-flex">
-                    <li class="sem-marcadores"><a href="" class="sem-sublinhado">Cursos</a></li>
-                    <li class="sem-marcadores"><a href="" class="sem-sublinhado">Unidades</a></li>
-                    <li class="sem-marcadores"><a href="" class="sem-sublinhado">Cursos</a></li>
-                    <li class="sem-marcadores"><a href="" class="sem-sublinhado">Cursos</a></li>
-                    <li class="sem-marcadores"><a href="" class="sem-sublinhado">Cursos</a></li>
+                    <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('cursos')">Cursos</a></li>
+                    <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('matricula')">Matricula</a></li>
+                    <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('parceria')">Parceria</a></li>
+                    <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('academico')">Acadêmico</a></li>
+                    <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('perguntas')">Perguntas</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,6 +44,14 @@ export default {
     methods: {
         showNav() {
             this.navResponsivo = !this.navResponsivo;
+        },
+
+        rolagem(sessaoId) {
+            const sessao = document.getElementById(sessaoId);
+            if (sessao) {
+                sessao.scrollIntoView({ behavior: 'smooth' });
+                this.navResponsivo = false;
+            }
         }
     }
 }
@@ -58,13 +66,14 @@ export default {
     }
 
     .inicio {
-        height: 50px;
-        background-color: var(--vermelho);
+        height: 30px;
+        background-color: var(--azul-escuro);
         width: 100%;
+        border-bottom: 3px solid var(--vermelho);
     }
 
     .logo {
-        width: 120px;
+        width: 110px;
     }
 
     .menu-burger {
