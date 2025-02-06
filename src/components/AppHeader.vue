@@ -5,10 +5,10 @@
             <div class="col-6 d-flex align-items-center">
                 <img :src="logo" alt="Logo" class="logo img-fluid ms-3">
             </div>
-            <div class="col-6 d-flex d-md-none justify-content-end align-items-center">
+            <div class="col-6 d-flex d-lg-none justify-content-end align-items-center">
                 <i class="menu-burger fa-solid fa-bars me-3" @click="showNav()"></i>
             </div>
-            <div v-if="navResponsivo" class="text-center d-md-none">
+            <div v-if="navResponsivo" class="text-center d-lg-none">
                 <ul class="lista-responsiva">
                     <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('cursos')">Cursos</a></li>
                     <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('matricula')">Matricula</a></li>
@@ -17,7 +17,7 @@
                     <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('perguntas')">Perguntas</a></li>
                 </ul>
             </div>
-            <div class="col-6 d-none d-md-flex justify-content-end align-items-center mt-4">
+            <div class="col-6 d-none d-lg-flex justify-content-end align-items-center mt-4">
                 <ul class="lista d-flex">
                     <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('cursos')">Cursos</a></li>
                     <li class="sem-marcadores"><a href="#" class="sem-sublinhado" @click="rolagem('matricula')">Matricula</a></li>

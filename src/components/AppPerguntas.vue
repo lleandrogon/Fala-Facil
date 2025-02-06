@@ -53,7 +53,7 @@ export default {
 
 .pergunta-container {
   background-color: rgb(224, 224, 224);
-  padding: 20px;
+  padding: 20px 15px;
   cursor: pointer;
   border-radius: 8px;
   transition: background 0.3s;

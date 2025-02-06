@@ -120,7 +120,7 @@ export default {
 
 .container-card {
   width: 330px;
-  height: 550px;
+  height: 630px;
   border: none;
   border-radius: 24px;
   background-color: var(--azul-escuro);
@@ -173,5 +173,11 @@ export default {
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .container-card {
+    height: 550px;
+  }
 }
 </style>
