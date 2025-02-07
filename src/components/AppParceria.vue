@@ -10,7 +10,7 @@
                     <h3>Florida<span>College</span></h3>
                 </div>
                 <p class="descricao mt-5 mx-2">Nós da Fala Fácil preparamos você para poder estudar em umas das melhores universidades dos Estados Unidos <strong>totalmente de graça</strong>.</p>
-                <div class="beneficios-container row mt-4 mx-2">
+                <div class="beneficios-container row mt-4 mx-2 mb-4 mb-xl-0">
                     <div v-for="beneficio in beneficios" :key="beneficio.id" class="beneficios col-lg-6">
                         <i :class="beneficio.icon" class="me-2"></i>
                         <span class="ms-1 ms-md-4">{{ beneficio.descricao }}</span>
